@@ -1,4 +1,4 @@
-# 🏦 Hybrid Banking — Blockchain Audit Layer
+# 🏦 Blockchain-Based Loan Management Framwork
 
 A **centralized banking system** that uses a local Ethereum blockchain (Ganache)
 **exclusively for data integrity and audit purposes** — no cryptocurrency, no
@@ -27,7 +27,7 @@ User → Express API → MongoDB (source of truth)
 ## Project Structure
 
 ```
-hybrid-banking/
+bblmf/
 ├── contracts/
 │   └── LoanLedger.sol              # Solidity contract (hash storage only)
 ├── migrations/
@@ -113,7 +113,7 @@ cp .env.example .env
 Edit `.env`:
 
 ```env
-MONGO_URI=mongodb://localhost:27017/hybrid_banking
+MONGO_URI=mongodb://localhost:27017/bblmf
 BLOCKCHAIN_RPC=http://127.0.0.1:7545
 CONTRACT_ADDRESS=           # fill in after Step 4
 BLOCKCHAIN_ACCOUNT=         # paste a Ganache account address
@@ -353,3 +353,5 @@ curl http://localhost:3000/api/loans/verify-loan/L001
 - For production use a private permissioned chain (e.g. Hyperledger Besu, Quorum).
 - Never expose the `BLOCKCHAIN_ACCOUNT` private key; use a secrets manager.
 - The blockchain is used only for **audit hashes** — no funds are ever transferred.
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](buymeacoffee.com/nerd5238)
