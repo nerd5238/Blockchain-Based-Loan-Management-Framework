@@ -334,6 +334,19 @@ curl http://localhost:3000/api/loans/verify-loan/L001
 ```
 
 ---
+## 📸 Screenshots
+
+### Terminal
+![Terminal for Starting Servers](screenshots/Terminal.png)
+
+### Dashboard
+![Dashboard](screenshots/Dashboard.png)
+
+### Create Loan Record
+![Create Loan Record](screenshots/Creation%20of%20loan.png)
+
+### Updated Dashboard
+![Updated Dashboard after load creation](screenshots/Updated%20Dashboard.png)
 
 ## Troubleshooting
 
